@@ -1,0 +1,17 @@
+.exchange {
+  &__title {
+    &--sub {
+      color: $primary;
+    }
+    &--main {
+      font-weight: 500;
+      color: #2a2a2a;
+      font-family: $AlienRobot;
+    }
+  }
+  &__container {
+    width: 90%;
+    &--symbol {
+    }
+  }
+}

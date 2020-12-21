@@ -9,7 +9,7 @@
       v-if="icon"
       avatar
     >
-      <q-icon :name="icon" />
+      <q-icon :name="`eva-${icon}`" />
     </q-item-section>
 
     <q-item-section>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: 'EssentialLink',
+  name: 'Links',
   props: {
     title: {
       type: String,
