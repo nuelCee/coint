@@ -11,7 +11,74 @@
   }
   &__container {
     width: 90%;
+    &--title {
+      font-family: $AlienRobot;
+    }
+    &--left {
+      .line {
+        width: 1px;
+        height: 50%;
+        background-color: rgba($primary, $alpha: 0.2);
+      }
+      border-radius: 10px;
+      input{
+          padding: 0 10px;
+      }
+      .text-end input {
+        text-align: end;
+      }
+      .q-select {
+        width: 25% !important;
+      }
+      .q-field {
+        width: 75%;
+      }
+    }
     &--symbol {
+      width: 100%;
+      height: 100%;
+      // background-color: red;
+      &-con {
+        z-index: 9;
+        background-color: rgba($primary, $alpha: 0.2);
+        backdrop-filter: blur(2px);
+        transform: translateY(-19%);
+        border-radius: 15px;
+        position: relative;
+        ::before,
+        ::after {
+          position: absolute;
+          content: "";
+          width: 1px;
+          transform: rotate(45deg);
+          background-image: linear-gradient(transparent, $primary, transparent);
+          transition: all 0.5s cubic-bezier(0.54, 0.18, 0.3, 0.99);
+          z-index: -1;
+        }
+        ::after {
+          transform: rotate(-45deg);
+        }
+        i {
+          background-color: #fff;
+          transition: all 0.5s cubic-bezier(0.54, 0.18, 0.3, 0.99);
+          border-radius: 10px;
+          svg {
+            fill: $primary;
+          }
+        }
+        &:hover {
+          ::before,
+          ::after {
+            transition: all 0.5s cubic-bezier(0.54, 0.18, 0.3, 0.99);
+            height: 300px;
+          }
+          i {
+            // transform: rotate(6deg);
+            transition: all 0.5s cubic-bezier(0.54, 0.18, 0.3, 0.99);
+            box-shadow: unset;
+          }
+        }
+      }
     }
   }
 }
