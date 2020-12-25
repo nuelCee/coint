@@ -12,7 +12,9 @@
   &__container {
     width: 90%;
     &--title {
-      font-family: $AlienRobot;
+      // font-family: $AlienRobot;
+      font-size: 15px;
+      text-transform: uppercase;
     }
     &--left {
       .line {

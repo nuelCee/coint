@@ -8,9 +8,9 @@
     </div>
     <div class="exchange__container q-mr-auto q-ml-auto q-pt-xl">
       <div class="row">
-        <div class="col-6 exchange__container--title q-pb-lg">Send</div>
+        <div class="col-6 exchange__container--title q-pb-lg">From</div>
         <div class="col-6 text-right exchange__container--title q-pb-lg">
-          Get
+          To
         </div>
       </div>
       <div class="row relative-position">
