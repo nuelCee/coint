@@ -12,3 +12,14 @@ body.body--light .q-header {
   background: #ffffff;
   color: $primary;
 }
+.feed {
+  // width: 100%;
+  color: #fff;
+}
+.marquee-text-wrap {
+  background-color: $dark;
+}
+.marquee-text-text {
+  display: flex;
+  padding: 10px;
+}

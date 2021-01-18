@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header>
-      <q-toolbar>
+      <q-toolbar bordered>
         <q-btn
           flat
           dense
