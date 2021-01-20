@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header>
+    <q-header class="relative-position">
       <q-toolbar bordered>
         <q-btn
           flat
@@ -41,9 +41,9 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <div>
       <router-view />
-    </q-page-container>
+    </div>
   </q-layout>
 </template>
 

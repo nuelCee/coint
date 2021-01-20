@@ -1,6 +1,6 @@
 <template>
-  <q-page>
-    <div>
+  <q-page class="relative-position">
+    <div class="marquee__con z-top">
       <marquee-text :duration="150">
        <div v-for="(info,i) in feed" :key="i" class="feed">
          <q-avatar>
@@ -13,7 +13,7 @@
        </div>
       </marquee-text>
     </div>
-    <div class="q-ml-auto q-mr-auto q-pt-xl" style="width:90%">
+    <div class="q-ml-auto q-mr-auto q-pt-xl relative-position" style="width:90%">
     <!-- <exchange class="q-mb-xl"/> -->
     <rate/>
     </div>

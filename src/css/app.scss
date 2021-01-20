@@ -16,10 +16,20 @@ body.body--light .q-header {
   // width: 100%;
   color: #fff;
 }
-.marquee-text-wrap {
-  background-color: $dark;
+.marquee__con {
+  position: sticky;
+  top: 0;
+  .marquee-text-wrap {
+    background-color: $dark;
+  }
+  .marquee-text-text {
+    display: flex;
+    padding: 10px;
+  }
 }
-.marquee-text-text {
-  display: flex;
-  padding: 10px;
+a {
+  text-decoration: unset;
+}
+.q-header {
+  position: relative;
 }

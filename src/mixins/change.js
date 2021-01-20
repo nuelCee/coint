@@ -1,7 +1,7 @@
 export default {
   methods: {
     changeInValue(value) {
-      return value.includes('-');
+      return value?.includes('-');
     },
   },
 };
