@@ -40,7 +40,6 @@ export default {
   created() {
     this.$store.dispatch('feed/fetchFeed').then((res) => {
       this.feed = res.results;
-      console.log(res.results);
     });
   },
 };
