@@ -4,6 +4,7 @@
     tag="a"
     target="_blank"
     :href="link"
+    class=""
   >
     <q-item-section
       v-if="icon"

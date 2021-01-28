@@ -2,14 +2,14 @@
   <q-layout view="lHh Lpr lFf">
     <q-header class="relative-position">
       <q-toolbar bordered>
-        <q-btn
+        <!-- <q-btn
           flat
           dense
           round
           icon="eva-menu-2"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
-        />
+        /> -->
 
         <q-toolbar-title>
           coint
