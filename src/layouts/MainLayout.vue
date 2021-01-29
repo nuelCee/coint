@@ -16,28 +16,22 @@
         </q-toolbar-title>
         <q-item>
           <q-item-section top avatar class="q-pa-none">
-            <q-avatar text-color="primary" icon="eva-github-outline" class="q-ml-auto"/>
+            <a href="https://github.com/nuelCee/coint">
+              <q-avatar
+                text-color="primary"
+                icon="eva-github-outline"
+                class="q-ml-auto"
+              />
+            </a>
           </q-item-section>
         </q-item>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      bordered
-      content-class="bg-grey-1"
-    >
+    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-1">
       <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-        </q-item-label>
-        <SidebarLinks
-          v-for="link in links"
-          :key="link.title"
-          v-bind="link"
-        />
+        <q-item-label header class="text-grey-8"> </q-item-label>
+        <SidebarLinks v-for="link in links" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
@@ -46,7 +40,6 @@
     </div>
   </q-layout>
 </template>
-
 <script>
 import SidebarLinks from 'components/Sidebar/Links.vue';
 import linksData from '../mixins/Sidebar/links';
