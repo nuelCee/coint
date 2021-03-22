@@ -23,7 +23,7 @@
         <q-tr :props="props">
           <q-td auto-width>
             <q-avatar size="24px" class="q-mr-md">
-              <img :src="`/rate_icons/${props.row.symbol}.svg`" />
+              <img :src="`./rate_icons/${changeCase(props.row.symbol)}.svg`" />
             </q-avatar>
           </q-td>
           <q-td v-for="col in props.cols" :key="col.name" :props="props">
@@ -101,6 +101,11 @@ export default {
     this.$store.dispatch('rates/fetchRates').then((res) => {
       this.ratesData = res;
     });
+  },
+  methods: {
+    changeCase(coin) {
+      return coin.toLowerCase();
+    },
   },
 };
 </script>
